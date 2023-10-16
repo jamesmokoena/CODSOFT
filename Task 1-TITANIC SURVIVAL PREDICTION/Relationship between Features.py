@@ -15,6 +15,7 @@ def Sex_vs_Survival():
     titanic_train.groupby('Sex').Survived.value_counts()
     titanic_train[['Sex', 'Survived']].groupby(['Sex'], as_index=False).mean()
     sns.barplot(x='Sex', y='Survived', data=titanic_train)
+    plt.show()
     
 
 def Pclass_and_Sex_vs_Survival():
